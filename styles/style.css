@@ -28,7 +28,7 @@ small {
 
 #page-header img {
   height: 80px;
-  width: 90%;
+  width: auto;
 }
 
 #page-header ul {
@@ -39,7 +39,7 @@ small {
 
 #page-header li {
   display: inline-block;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #page-header a {
@@ -50,4 +50,34 @@ small {
 
 #page-header a:hover {
   text-decoration: underline;
+}
+
+#hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/flowers.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 4rem;
+}
+
+.hero-tagline {
+  color: #ffffff;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+#hero button {
+  font-family: inherit;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #ffffff;
+  color: #111f0d;
+  cursor: pointer;
+}
+
+main {
+  padding: 2rem;
 }
