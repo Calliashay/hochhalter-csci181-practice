@@ -81,3 +81,12 @@ small {
 main {
   padding: 2rem;
 }
+
+input,
+textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
