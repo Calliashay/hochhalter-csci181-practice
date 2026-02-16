@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap");
 
+#page-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #111f0d;
+  padding: 1rem;
+}
+
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
@@ -19,11 +27,6 @@ h4 {
 p,
 small {
   font-weight: 300;
-}
-
-#page-header {
-  background-color: #111f0d;
-  padding: 1rem;
 }
 
 #page-header img {
@@ -50,6 +53,21 @@ small {
 
 #page-header a:hover {
   text-decoration: underline;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-card {
+  border-radius: 12px;
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 #hero {
@@ -80,6 +98,7 @@ small {
 
 main {
   padding: 2rem;
+  padding-top: 7rem;
 }
 
 input,
