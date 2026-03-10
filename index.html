@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Home - Callia Hochhalter Portfolio</title>
   </head>
@@ -22,16 +23,131 @@
       </nav>
     </header>
     <main>
+      
       <section id="hero">
         <p class="hero-tagline">
           Callia Hochhalter - MIS Student - Portfolio in Progress
         </p>
         <a href="resume.html">View My Work</a>
+      
       </section>
-      <h1>Home</h1>
+      <h1 class="mt-3 mb-2 text-2xl font-bold text-slate-900">
+        Home
+      </h1>
       <p>Welcome to my CSCI 181 practice site!</p>
+      
+      <section class="mt-12">
+        <h2 class="mb-6 text-2xl font-bold text-slate-900">
+          Student Testimonials
+        </h2>
+
+        
+        <ul class="grid grid-cols-1 gap-6 list-none p-0 md:grid-cols-2 lg:grid-cols-3">
+          <li>
+            <figure class="relative rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-lg">
+              <svg
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                focusable="false"
+                class="absolute top-4 left-4 h-8 w-8 fill-slate-300"
+              >
+                <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+              </svg>
+
+              <blockquote class="pt-8">
+                <p class="text-base leading-7 text-slate-900">
+                  This class made web design feel way less intimidating. I liked
+                  getting to actually build something that looked clean and
+                  worked across different screen sizes.
+                </p>
+              </blockquote>
+
+              <figcaption class="mt-6 flex items-center gap-4">
+                <img
+                  src="./images/testimonial-1.jpg"
+                  alt=""
+                  class="h-14 w-14 rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-base font-semibold text-slate-900">Ava Martinez</p>
+                  <p class="text-sm text-slate-600">MIS Student</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="relative rounded-2xl border border-slate-200 bg-white p-6 shadow-lg">
+              <svg
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                focusable="false"
+                class="absolute top-4 left-4 h-8 w-8 fill-slate-300"
+              >
+                <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+              </svg>
+
+              <blockquote class="pt-8">
+                <p class="text-base leading-7 text-slate-900">
+                  Using Tailwind was honestly kind of fun once I got used to it.
+                  It made spacing and layout faster, and I didn’t have to keep
+                  jumping back and forth between HTML and CSS as much.
+                </p>
+              </blockquote>
+
+              <figcaption class="mt-6 flex items-center gap-4">
+                <img
+                  src="./images/testimonial-2.jpg"
+                  alt=""
+                  class="h-14 w-14 rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-base font-semibold text-slate-900">Jordan Lee</p>
+                  <p class="text-sm text-slate-600">Computer Science Major</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+
+          <li>
+            <figure class="relative rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-lg">
+              <svg
+                viewBox="0 0 32 32"
+                aria-hidden="true"
+                focusable="false"
+                class="absolute top-4 left-4 h-8 w-8 fill-slate-300"
+              >
+                <path d="M10 8v8H6v6h6V8h-2zm12 0v8h-4v6h6V8h-2z"></path>
+              </svg>
+
+              <blockquote class="pt-8">
+                <p class="text-base leading-7 text-slate-900">
+                  The design principles part helped a lot because it made me pay
+                  more attention to spacing, hierarchy, and what actually makes
+                  a page easier to read instead of just throwing stuff on it.
+                </p>
+              </blockquote>
+
+              <figcaption class="mt-6 flex items-center gap-4">
+                <img
+                  src="./images/testimonial-3.jpg"
+                  alt=""
+                  class="h-14 w-14 rounded-full object-cover"
+                />
+                <div>
+                  <p class="text-base font-semibold text-slate-900">Mia Thompson</p>
+                  <p class="text-sm text-slate-600">Business Student</p>
+                </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
       <section id="projects">
-        <h2>Projects</h2>
+        <h2 class="mt-6 mb-2 text-2xl font-bold text-slate-900">
+          Projects
+        </h2>
 
         <ul class="project-list">
           <li class="project-card">
