@@ -1,12 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap");
 
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --header-bg: #111f0d; 
+  --card-bg: #ffffff;
+}
+
+body.dark {
+  --bg: #0d140b;
+  --text: #f0fdf4; 
+  --header-bg: #080f06;
+  --card-bg: #1a2e16;
+}
+
+body.dark figure {
+  background-color: var(--card-bg) !important;
+}
+
+body.dark figure p {
+  color: var(--text) !important;
+}
+
+body.dark figcaption p {
+  color: var(--text) !important;
+}
+
+body.dark h1, 
+body.dark h2, 
+body.dark h3,
+body.dark h4,
+body.dark p {
+  color: var(--text) !important;
+}
+
 @layer base {
   body {
     margin: 0;
     font-family: "Manrope", sans-serif;
     font-size: 1rem;
     line-height: 1.5;
-    color: #222222;
+    background-color: var(--bg);
+    color: var(--text);
   }
 
   h1,
@@ -15,6 +50,7 @@
   h4 {
     font-weight: 700;
     line-height: 1.2;
+    color: var(--text);
   }
 
   p,
@@ -27,7 +63,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #111f0d;
+  background-color: var(--header-bg);
   padding: 1rem;
 }
 
@@ -57,6 +93,17 @@
   text-decoration: underline;
 }
 
+#theme-toggle {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  border-radius: 4px; /* Subtle rounding  */
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+}
+
 .project-list {
   list-style-type: none;
   padding: 0;
@@ -64,6 +111,7 @@
 }
 
 .project-card {
+  background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow:
     0 4px 6px -1px rgba(0, 0, 0, 0.1),
